@@ -1,4 +1,5 @@
-nav ul{
+/* '>' meaning immidiate child all. not parent or smething */
+nav > ul{  
     display: flex;
 }
 
@@ -15,4 +16,17 @@ nav li a{
 
 nav li:hover{
     background-color: lightgray;
+}
+
+/* Nested Menu Styles */
+
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    padding-left: 10px;
+}
+
+nav li:hover > .dropdown{
+    display: block;
 }
